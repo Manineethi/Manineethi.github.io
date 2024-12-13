@@ -64,7 +64,7 @@ h1, h2, h3 {
 }
 #about {
     position: relative;
-    color: black; /* Ensures text is readable */
+    color: white; /* Ensures text is readable */
     padding: 40px 20px; /* Adjust padding as needed */
 }
 
