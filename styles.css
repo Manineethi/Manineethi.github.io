@@ -9,7 +9,7 @@ body {
 header {
     background: linear-gradient(to bottom, #6C91C2, #3B5998); /* Subtle gradient for depth */
     color: #fff;
-    padding: 20px 0;
+    padding: 15px 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Header shadow for 3D effect */
 }
@@ -62,6 +62,32 @@ footer {
 h1, h2, h3 {
     font-weight: bold; /* Bold text for headings */
 }
+#about {
+    background-image: url('images/data analysis.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the whole section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    color: white; /* Ensures text is readable */
+    padding: 40px 20px; /* Adjust padding as needed */
+    position: relative;
+}
+
+/* To make the background lighter */
+#about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.6); /* Lightens the background */
+    z-index: -1; /* Ensures the overlay is behind the content */
+}
+
+/* Optional: You can also adjust the height of the About Me section */
+/*#about {
+    min-height: 400px; /* Set a minimum height for the section */
+}*/
 
 .project {
     display: flex;
@@ -112,7 +138,7 @@ h1, h2, h3 {
 
 
 article header h3 {
-    color: #333; /* Neutral color for headings */
+    color: #fff; /* Neutral color for headings */
     font-weight: bold;
     margin: 0 0 10px;
     font-size: 1.2em;
