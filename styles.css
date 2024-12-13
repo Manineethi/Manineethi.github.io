@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: linear-gradient(to bottom, #F7F7F7, #F4E1D2); /* Subtle gradient for depth grey to beige */
+    background: linear-gradient(to bottom, #F7F7F7, #1ABC9C); /* Subtle gradient for depth grey to blue */
     color: #2C3E50; /* Dark Navy text color */
     padding: 15px 0;
     text-align: center;
@@ -49,7 +49,7 @@ section.active {
 }
 
 footer {
-    background: linear-gradient(to top, #F7F7F7, #F4E1D2); /* Match header gradient */
+    background: linear-gradient(to top, #F7F7F7, #1ABC9C); /* Match header gradient */
     color: #2C3E50; /* Dark Navy text color */
     text-align: center;
     padding: 20px 0;
@@ -64,7 +64,7 @@ h1, h2, h3 {
 }
 #about {
     position: relative;
-    color: white; /* Ensures text is readable */
+    color: black; /* Ensures text is readable */
     padding: 40px 20px; /* Adjust padding as needed */
 }
 
@@ -80,7 +80,7 @@ h1, h2, h3 {
     background-size: cover; /* Ensure the image covers the whole section */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repeating the image */
-    opacity: 0.3; /* Adjust opacity to make the image lighter */
+    opacity: 0.6; /* Adjust opacity to make the image lighter */
     filter: brightness(1.5) opacity(0.2); /* additional filter for more pale effect */
     z-index: -1; /* Ensures the overlay is behind the content */
 }
