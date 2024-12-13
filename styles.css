@@ -3,12 +3,12 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f9; /* Light background for the body */
+    background-color: #f9f9f9; /* Light background for the body */
 }
 
 header {
-    background: linear-gradient(to bottom, #6C91C2, #3B5998); /* Subtle gradient for depth */
-    color: #fff;
+    background: linear-gradient(to bottom, #F7F7F7, #F4E1D2); /* Subtle gradient for depth grey to beige */
+    color: #2C3E50; /* Dark Navy text color */
     padding: 15px 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Header shadow for 3D effect */
@@ -25,14 +25,14 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #2C3E50; /* Dark Navy text color */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s, transform 0.3s; /* Smooth hover effect */
 }
 
 header nav ul li a:hover {
-    color: #ffeb3b; /* Yellow hover effect */
+    color: #3498DBb; /* Electric blue hover effect */
     text-decoration: underline;
     transform: scale(1.1); /* Slight zoom effect */
 }
@@ -49,8 +49,8 @@ section.active {
 }
 
 footer {
-    background: linear-gradient(to top, #6C91C2, #3B5998); /* Match header gradient */
-    color: #fff;
+    background: linear-gradient(to top, #F7F7F7, #F4E1D2); /* Match header gradient */
+    color: #2C3E50; /* Dark Navy text color */
     text-align: center;
     padding: 20px 0;
     position: relative;
@@ -63,16 +63,12 @@ h1, h2, h3 {
     font-weight: bold; /* Bold text for headings */
 }
 #about {
-    background-image: url('images/data analysis.jpg'); /* Replace with your image path */
-    background-size: cover; /* Ensure the image covers the whole section */
-    background-position: contain; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repeating the image */
+    position: relative;
     color: white; /* Ensures text is readable */
     padding: 40px 20px; /* Adjust padding as needed */
-    position: relative;
 }
 
-/* To make the background lighter */
+/* To add the background image with opacity */
 #about::before {
     content: '';
     position: absolute;
@@ -80,7 +76,12 @@ h1, h2, h3 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.2); /* Lightens the background */
+    background-image: url('images/data_backgrounds.jpg'); /* Your image path */
+    background-size: cover; /* Ensure the image covers the whole section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    opacity: 0.3; /* Adjust opacity to make the image lighter */
+    filter: brightness(1.5) opacity(0.2); /* additional filter for more pale effect */
     z-index: -1; /* Ensures the overlay is behind the content */
 }
 
@@ -123,7 +124,7 @@ h1, h2, h3 {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #6C91C2; /* Button background */
+    background-color: #1ABC9C; /* Button background */
     color: white; /* Text color */
     text-decoration: none;
     border-radius: 25px; /* Rounded corners */
@@ -132,13 +133,13 @@ h1, h2, h3 {
 }
 
 .button:hover {
-    background-color: #3B5998; /* Darker shade on hover */
+    background-color: #3498DB; /* Darker shade on hover */
     transform: scale(1.05); /* Slight zoom on hover */
 }
 
 
 article header h3 {
-    color: #fff; /* Neutral color for headings */
+    color: #2C3E50; /* Neutral color for headings */
     font-weight: bold;
     margin: 0 0 10px;
     font-size: 1.2em;
