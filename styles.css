@@ -20,7 +20,7 @@ header {
 h1, h2, h3 {
     font-family: 'Calibri', sans-serif; /* Calibri font for headings */
     font-weight: bold;
-    color: #d9d9d9; /* Light grey text for headings */
+    color: #033047; /* blue grey text for headings */
 }
 
 /* Navigation Styles */
@@ -51,7 +51,7 @@ header nav ul li a:hover {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #304c62; /* Button background color */
+    background-color: #033047; /* Button background color */
     color: white; /* Button text color */
     text-decoration: none;
     border-radius: 25px;
@@ -88,21 +88,46 @@ section.active {
     display: block; /* Show active section */
 }
 
+/* Article Styles */
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.project article {
+    width: 300px; /* Fixed width for each article */
+    background-color: #ffffff; /* White background for the articles */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* "Pop-out" effect with shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+    border: 1px solid #d9d9d9; /* Light border */
+    margin-bottom: 20px;
+}
+
+.project article:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
+}
+
 /* Article Header Styles */
-article header h3 {
+.project article header h3 {
     color: #d9d9d9; /* Light text color for article headings */
     font-weight: bold;
     margin: 0 0 10px;
     font-size: 1.2em;
 }
 
-article header h3 a {
+.project article header h3 a {
     color: inherit;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-article header h3 a:hover {
+.project article header h3 a:hover {
     text-decoration: underline;
     color: #5E8DFF; /* Hover effect */
 }
