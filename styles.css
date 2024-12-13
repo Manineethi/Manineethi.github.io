@@ -87,16 +87,6 @@ section {
 section.active {
     display: block; /* Show active section */
 }
-
-/* Article Styles */
-.project {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-}
-
 .project article {
     width: 300px; /* Fixed width for each article */
     background-color: #ffffff; /* White background for the articles */
@@ -106,13 +96,20 @@ section.active {
     transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
     border: 1px solid #d9d9d9; /* Light border */
     margin-bottom: 20px;
+    overflow: hidden; /* Ensures images stay within the article */
 }
 
+.project article img {
+    width: 100%; /* Makes images take the full width of the article */
+    height: auto; /* Keeps the aspect ratio intact */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+/* Hover effects for the article */
 .project article:hover {
     transform: translateY(-5px); /* Lift effect */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
 }
-
 /* Article Header Styles */
 .project article header h3 {
     color: #d9d9d9; /* Light text color for article headings */
