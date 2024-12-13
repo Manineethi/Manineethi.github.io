@@ -9,7 +9,7 @@ body {
 
 /* Header Styles */
 header {
-    background: linear-gradient(to right, #033047, #304c62); /* Updated gradient colors */
+    background: linear-gradient(to right, #59d3fc, #554dde); /* Updated gradient colors */
     color: #d9d9d9; /* Light font color */
     padding: 15px 0;
     text-align: center;
@@ -51,7 +51,7 @@ header nav ul li a:hover {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #033047; /* Button background color */
+    background-color: #1ca7ec; /* Button background color */
     color: white; /* Button text color */
     text-decoration: none;
     border-radius: 25px;
@@ -66,7 +66,7 @@ header nav ul li a:hover {
 
 /* Footer Styles */
 footer {
-    background: linear-gradient(to right, #033047, #304c62);
+    background: linear-gradient(to right, #59d3fc, #554dde);
     color: #d9d9d9; /* Footer text color */
     text-align: center;
     padding: 20px 0;
@@ -87,6 +87,16 @@ section {
 section.active {
     display: block; /* Show active section */
 }
+
+/* Article Styles */
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
 .project article {
     width: 300px; /* Fixed width for each article */
     background-color: #ffffff; /* White background for the articles */
@@ -98,6 +108,12 @@ section.active {
     margin-bottom: 20px;
     overflow: hidden; /* Ensures images stay within the article */
 }
+
+/* .project article img { */
+    /* width: 100%; /* Makes images take the full width of the article */ */
+    /* height: auto; /* Keeps the aspect ratio intact */ */
+    /* border-radius: 8px; /* Rounded corners for the image */ */
+/* } */
 
 .project img {
     width: 100%; /* Ensures the image fills the container's width */
@@ -113,6 +129,9 @@ section.active {
     transform: translateY(-5px); /* Lift effect */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
 }
+
+
+
 /* Article Header Styles */
 .project article header h3 {
     color: #d9d9d9; /* Light text color for article headings */
