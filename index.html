@@ -4,6 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        section {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .project {
+            display: none; /* Hidden by default */
+        }
+        .active {
+            display: block; /* Display when active */
+        }
+    </style>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,13 +48,13 @@
         <h1>Mani's Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about" onclick="showSection('about')">About Me</a></li>
+                <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section id="about">
+    <section id="about" class="active">
         <h2>About Me</h2>
         <p>Hello!!</p>
         <ul>
@@ -28,26 +65,56 @@
             <li>Comptia Data+ Certified</li>
         </ul>
     </section>
-    <section id="projects">
+    <section id="projects" class="active">
         <h2>My Projects</h2>
         <div class="project">
-            <h3>LACrimeAnalysis with Tableau</h3>
-            <img src="images/US_cost of Living.jpg" alt="Interactive Dashboard" style="width: 600px; height: 800px; object-fit: cover;">
-            <p>This analysis,is to uncover patterns in victimization rates by ethnicity, age, and gender, and identify prevalent crime categories in Los Angeles. Spatial analysis helps visualize crime trends across the city. </p>
-            <a href="https://github.com/Manineethi/-LACrimeAnalysis-using-Tableau">View Project</a>
-            <h3>USA Cost of Living with Tableau</h3>
-            <img src="images/LA_Crime_spatial_analysis.png" alt="Tableau Dashboard for LA Crime Analysis" style="width: 600px; height: 800px; object-fit: cover;">
-            <p>US Cost of Living dataset to compare housing, food, and healthcare costs across regions, helping identify affordable areas for families and understand income disparities. </p>
-            <a href="https://github.com/Manineethi/US_cost_of_Living">View Project</a>
+            <article>
+            <header>
+                <h3><a href="https://github.com/Manineethi/-LACrimeAnalysis-using-Tableau">LACrimeAnalysis with Tableau</a></h3>
+            </header>
+            <a href="https://github.com/Manineethi/-LACrimeAnalysis-using-Tableau" class="image fit">
+                <img src="images/US_cost_of_Living.jpg" alt="Interactive Dashboard" style="width: 600px; height: 800px; object-fit: cover;">
+            </a>
+            <p>This analysis uncovers patterns in victimization rates by ethnicity, age, and gender, and identifies prevalent crime categories in Los Angeles. Spatial analysis helps visualize crime trends across the city.</p>
+            <ul class="actions special">
+                <li><a href="https://github.com/Manineethi/-LACrimeAnalysis-using-Tableau" class="button">View Project</a></li>
+            </ul>
+        </article>
+        
+        <article>
+            <header>
+                <h3><a href="https://github.com/Manineethi/US_cost_of_Living">USA Cost of Living with Tableau</a></h3>
+            </header>
+            <a href="https://github.com/Manineethi/US_cost_of_Living" class="image fit">
+                <img src="images/LA_Crime_spatial_analysis.png" alt="Tableau Dashboard for LA Crime Analysis" style="width: 600px; height: 800px; object-fit: cover;">
+            </a>
+            <p>This project uses the US Cost of Living dataset to compare housing, food, and healthcare costs across regions, helping identify affordable areas for families and understand income disparities.</p>
+            <ul class="actions special">
+                <li><a href="https://github.com/Manineethi/US_cost_of_Living" class="button">View Project</a></li>
+            </ul>
+        </article>            
         </div>
         <!-- Add more projects as needed -->
     </section>
-    <section id="contact">
+    <section id="contact" class="active">
         <h2>Contact Me</h2>
         <p>You can reach me at: <a href="mailto:manimozhi89@gmail.com">manimozhi89@gmail.com</a></p>
     </section>
+    <script>
+    // Function to toggle between sections (About Me and Projects)
+    function showSection(section) {
+        // Hide all sections
+        document.querySelectorAll('section').forEach(function(s) {
+            s.classList.remove('active');
+        });
+
+        // Show the selected section
+        document.getElementById(section).classList.add('active');
+    }
+</script>
     <footer>
         <p>&copy; 2025 Manimozhi</p>
     </footer>
+    
 </body>
 </html>
