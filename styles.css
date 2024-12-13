@@ -118,6 +118,7 @@ section.active {
     object-fit: contain; /* Ensure the full image is visible without cropping */
     display: block; /* Remove any space below the image */
     margin: 0 auto; /* Center the image horizontally */
+    border-radius: 8px;
 }
 
 /* Hover effects for the article */
