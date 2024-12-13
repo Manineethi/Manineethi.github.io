@@ -1,19 +1,29 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Calibri', sans-serif; /* Using Calibri font */
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f9f9f9; /* Light background for the body */
+    background-color: #f4f3ee; /* Light background */
 }
 
+/* Header Styles */
 header {
-    background: linear-gradient(to bottom, #F7F7F7, #1ABC9C); /* Subtle gradient for depth grey to blue */
-    color: #2C3E50; /* Dark Navy text color */
+    background: linear-gradient(to right, #033047, #304c62); /* Updated gradient colors */
+    color: #d9d9d9; /* Light font color */
     padding: 15px 0;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Header shadow for 3D effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Header shadow */
 }
 
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Calibri', sans-serif; /* Calibri font for headings */
+    font-weight: bold;
+    color: #d9d9d9; /* Light grey text for headings */
+}
+
+/* Navigation Styles */
 header nav ul {
     list-style: none;
     padding: 0;
@@ -25,22 +35,52 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #2C3E50; /* Dark Navy text color */
+    color: #d9d9d9; /* Light grey text for nav links */
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s, transform 0.3s; /* Smooth hover effect */
+    transition: color 0.3s, transform 0.3s; /* Hover effects */
 }
 
 header nav ul li a:hover {
-    color: #3498DBb; /* Electric blue hover effect */
+    color: #5c677d; /* Hover color */
     text-decoration: underline;
-    transform: scale(1.1); /* Slight zoom effect */
+    transform: scale(1.1);
 }
 
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #304c62; /* Button background color */
+    color: white; /* Button text color */
+    text-decoration: none;
+    border-radius: 25px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth hover effect */
+}
+
+.button:hover {
+    background-color: #5c677d; /* Hover effect */
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(to right, #033047, #304c62);
+    color: #d9d9d9; /* Footer text color */
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Footer shadow */
+}
+
+/* Section Styles */
 section {
     padding: 20px;
     margin: 10px auto;
-    max-width: 900px; /* Center content and control width */
+    max-width: 900px;
     display: none; /* Hide all sections by default */
 }
 
@@ -48,110 +88,21 @@ section.active {
     display: block; /* Show active section */
 }
 
-footer {
-    background: linear-gradient(to top, #F7F7F7, #1ABC9C); /* Match header gradient */
-    color: #2C3E50; /* Dark Navy text color */
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Footer shadow for 3D effect */
-}
-
-h1, h2, h3 {
-    font-weight: bold; /* Bold text for headings */
-}
-#about {
-    position: relative;
-    color: white; /* Ensures text is readable */
-    padding: 40px 20px; /* Adjust padding as needed */
-}
-
-/* To add the background image with opacity */
-#about::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('images/data_background.jpg'); /* Your image path */
-    background-size: cover; /* Ensure the image covers the whole section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repeating the image */
-    opacity: 0.4; /* Adjust opacity to make the image lighter */
-    filter: brightness(1.5) opacity(0.2); /* additional filter for more pale effect */
-    z-index: -1; /* Ensures the overlay is behind the content */
-}
-
-/* Optional: You can also adjust the height of the About Me section */
-/*#about {
-    min-height: 400px; /* Set a minimum height for the section */
-}*/
-
-.project {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.project article {
-    width: 300px; /* Fixed width for articles */
-    margin-bottom: 20px;
-    background-color: #f9f9f9; /* Light article background */
-    border: 2px solid #ddd; /* Border around the article */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    padding: 20px;
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
-}
-
-.project article:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-}
-
-.project img {
-    width: 100%;
-    height: auto;
-    max-height: 200px; /* Limit image height */
-    object-fit: contain; /* Preserve image aspect ratio */
-    border-radius: 5px; /* Rounded corners for images */
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #1ABC9C; /* Button background */
-    color: white; /* Text color */
-    text-decoration: none;
-    border-radius: 25px; /* Rounded corners */
-    text-align: center;
-    transition: background-color 0.3s, transform 0.3s; /* Smooth hover effects */
-}
-
-.button:hover {
-    background-color: #3498DB; /* Darker shade on hover */
-    transform: scale(1.05); /* Slight zoom on hover */
-}
-
-
+/* Article Header Styles */
 article header h3 {
-    color: #2C3E50; /* Neutral color for headings */
+    color: #d9d9d9; /* Light text color for article headings */
     font-weight: bold;
     margin: 0 0 10px;
     font-size: 1.2em;
 }
 
 article header h3 a {
-    color: inherit; /* Keep color same as parent */
+    color: inherit;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 article header h3 a:hover {
     text-decoration: underline;
-    color: #6C91C2; /* Highlight color on hover */
+    color: #5E8DFF; /* Hover effect */
 }
