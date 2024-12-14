@@ -101,7 +101,7 @@ section.active {
 /* Article Styles */
 .project article {
     width: 100%; /* Default to full width on smaller screens */
-    max-width: 320px; /* Max width for each article */
+    max-width: 370px; /* Max width for each article */
     background-color: #ffffff; /* White background for the articles */
     border-radius: 10px; /* Rounded corners */
     padding: 20px;
