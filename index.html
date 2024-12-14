@@ -113,17 +113,50 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>You can reach me at: <a href="mailto:manimozhiangu@gmail.com">
-            <img src="images/email-logo-png.png" alt="Email">manimozhiangu@gmail.com</a></p>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/mani-neethi/" target="_blank"> 
-                <img src="images/LinkedIn_logo_initials.png" alt="LinkedIn">LinkedIn
+    <p>You can reach me at: 
+        <a href="mailto:manimozhiangu@gmail.com">
+            <img src="images/email-logo-png.png" alt="Email" class="contact-icon">manimozhiangu@gmail.com
+        </a>
+    </p>
+    <ul>
+        <li>
+            <a href="https://www.linkedin.com/in/mani-neethi/" target="_blank">
+                <img src="images/LinkedIn_logo_initials.png" alt="LinkedIn" class="contact-icon">LinkedIn
             </a>
-            </li>
-            <li><a href="https://github.com/Manineethi" target="_blank">
-                <img src="images/GitHub.png" alt="LinkedIn">GitHub</a></li>
-        </ul>
-    </section>
+        </li>
+        <li>
+            <a href="https://github.com/Manineethi" target="_blank">
+                <img src="images/GitHub.png" alt="GitHub" class="contact-icon">GitHub
+            </a>
+        </li>
+    </ul>
+</section>
+
+<style>
+    /* General styles for contact section */
+    #contact ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    #contact ul li {
+        margin: 10px 0;
+    }
+
+    #contact ul li a {
+        font-size: 1.2em;
+        color: #033047;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    #contact ul li a:hover {
+        color: #59d3fc;
+    }
+    
+   </style>
 
     <script>
     // Function to toggle between sections (About Me, Projects, and Contact)
