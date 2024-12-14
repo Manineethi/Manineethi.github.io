@@ -94,15 +94,17 @@ section.active {
 .project {
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap onto the next line */
-    justify-content: space-between; /* Ensure items spread across the container */
+    justify-content: flex-start; /* align the items to the left without adding extra space */
     gap: 20px; /* Set a small gap between items */
+    width: 100%;
+    max-width: 1100px;
     margin: 0 auto; /* Center the container on the page */
     padding: 20px; /* Optional padding */
 }
 
 .project article {
     flex: 1 1 calc(50% - 20px); /* Make each article 50% wide minus the gap */
-    max-width: calc(50% - 20px); /* Ensure consistency in width */
+    max-width: 100%; /* Ensure consistency in width */
     background-color: #ffffff; /* White background for the articles */
     border-radius: 10px; /* Rounded corners */
     padding: 20px;
