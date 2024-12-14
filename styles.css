@@ -15,13 +15,7 @@ header {
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Header shadow */
 }
-header1 {
-    background: #1ca7ec; /* Updated gradient colors */
-    color: #d9d9d9; /* Light font color */
-    padding: 15px 0;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Header shadow */
-}
+
 
 /* Headings */
 h1, h2, h3 {
