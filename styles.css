@@ -90,32 +90,39 @@ section {
 section.active {
     display: block; /* Show active section */
 }
+/* Article Styles */
 .project {
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap onto the next line */
-    justify-content: space-between; /* Distribute items with space between */
-    gap: 20px; /* Set a gap between the items */
-    margin: 0 auto; /* Center the project container */
-    padding: 20px; /* Optional: add padding around the container */
+    justify-content: space-between; /* Ensure items spread across the container */
+    gap: 20px; /* Set a small gap between items */
+    margin: 0 auto; /* Center the container on the page */
+    padding: 20px; /* Optional padding */
 }
-/* Article Styles */
+
 .project article {
-    width: 100%; /* Default to full width on smaller screens */
-    max-width: 370px; /* Max width for each article */
+    flex: 1 1 calc(50% - 20px); /* Make each article 50% wide minus the gap */
+    max-width: calc(50% - 20px); /* Ensure consistency in width */
     background-color: #ffffff; /* White background for the articles */
     border-radius: 10px; /* Rounded corners */
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* "Pop-out" effect with shadow */
     transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
     border: 1px solid #d9d9d9; /* Light border */
-    margin-bottom: 20px;
-    overflow: hidden; /* Ensures images stay within the article */
+    overflow: hidden; /* Keeps content within the article */
 }
 
-/* Add responsiveness */
-@media (min-width: 768px) {
+/* Hover Effect */
+.project article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive Adjustment for Smaller Screens */
+@media (max-width: 768px) {
     .project article {
-        width: 48%; /* Two items per row on medium-sized screens */
+        flex: 1 1 100%; /* Each article takes full width */
+        max-width: 100%;
     }
 }
 
