@@ -9,11 +9,14 @@ body {
 
 /* Header Styles */
 header {
-    position: sticky;
+    position: fixed; /* Change from sticky to fixed */
+    top: 0; /* Ensure the header is fixed at the top */
+    left: 0;
+    right: 0; /* Stretch it across the entire width of the page */
     background: linear-gradient(to right, #59d3fc, #554dde); /* Updated gradient colors */
     color: #f7f7f7; /* Light font color */
     padding: 15px 0;
-    text-align: center;
+    text-align: right;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Header shadow */
     font-family: 'Calibri', sans-serif;
     font-weight: bold; /* Make the text bold */
