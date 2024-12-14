@@ -9,6 +9,7 @@ body {
 
 /* Header Styles */
 header {
+    position: sticky;
     background: linear-gradient(to right, #59d3fc, #554dde); /* Updated gradient colors */
     color: #f7f7f7; /* Light font color */
     padding: 15px 0;
