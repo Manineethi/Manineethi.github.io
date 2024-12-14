@@ -90,24 +90,18 @@ section {
 section.active {
     display: block; /* Show active section */
 }
-
-/* Article Styles */
 .project {
     display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    justify-content: center;
-    padding: 20px;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    justify-content: space-between; /* Distribute items with space between */
+    gap: 20px; /* Set a gap between the items */
+    margin: 0 auto; /* Center the project container */
+    padding: 20px; /* Optional: add padding around the container */
 }
-@media (max-width: 768px) {
-    .project article {
-        width: 100%; /* Full width on smaller screens */
-    }
-}
-
-
+/* Article Styles */
 .project article {
-    width: 320px; /* Fixed width for each article */
+    width: 100%; /* Default to full width on smaller screens */
+    max-width: 320px; /* Max width for each article */
     background-color: #ffffff; /* White background for the articles */
     border-radius: 10px; /* Rounded corners */
     padding: 20px;
@@ -118,7 +112,19 @@ section.active {
     overflow: hidden; /* Ensures images stay within the article */
 }
 
+/* Add responsiveness */
+@media (min-width: 768px) {
+    .project article {
+        width: 48%; /* Two items per row on medium-sized screens */
+    }
+}
 
+@media (min-width: 1024px) {
+    .project article {
+        width: 30%; /* Three items per row on larger screens */
+    }
+}
+/* Article Styles */
 
 .project img {
     width: 100%; /* Ensures the image fills the container's width */
