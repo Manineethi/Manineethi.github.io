@@ -104,7 +104,7 @@ section.active {
 
 
 .project article {
-    width: 400px; /* Fixed width for each article */
+    width: 350px; /* Fixed width for each article */
     background-color: #ffffff; /* White background for the articles */
     border-radius: 10px; /* Rounded corners */
     padding: 20px;
