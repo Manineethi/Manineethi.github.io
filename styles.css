@@ -10,9 +10,6 @@ body {
 /* Header Styles */
 header {
     position: sticky; /* Change to sticky  */
-    top: 0; /* Ensure the header is fixed at the top */
-    left: 0;
-    right: 0; /* Stretch it across the entire width of the page */
     background: linear-gradient(to right, #59d3fc, #554dde); /* Updated gradient colors */
     color: #f7f7f7; /* Light font color */
     padding: 15px 0;
@@ -68,7 +65,7 @@ header nav ul li a:hover {
 }
 
 .button:hover {
-    background-color: #5c677d; /* Hover effect */
+    background-color: #554dde; /* Hover effect */
     transform: scale(1.05);
 }
 
