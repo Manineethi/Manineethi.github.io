@@ -54,7 +54,7 @@ header nav ul li a:hover {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #5f58db; /* Button background color */
+    background-color: #59d3fc; /* Button background color */
     color: white; /* Button text color */
     text-decoration: none;
     border-radius: 25px;
@@ -70,7 +70,7 @@ header nav ul li a:hover {
 /* Footer Styles */
 footer {
     background: linear-gradient(to right, #59d3fc, #554dde);
-    color: #d9d9d9; /* Footer text color */
+    color: #f7f7f7; /* Footer text color */
     text-align: center;
     padding: 20px 0;
     position: relative;
@@ -155,7 +155,7 @@ section.active {
 
 /* Article Header Styles */
 .project article header h3 {
-    color: #d9d9d9; /* Light text color for article headings */
+    color: #f7f7f7; /* Light text color for article headings */
     font-weight: bold;
     margin: 0 0 10px;
     font-size: 1.2em;
