@@ -16,7 +16,7 @@ header {
     background: linear-gradient(to right, #59d3fc, #554dde); /* Updated gradient colors */
     color: #f7f7f7; /* Light font color */
     padding: 15px 0;
-    text-align: right;
+    text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Header shadow */
     font-family: 'Calibri', sans-serif;
     font-weight: bold; /* Make the text bold */
@@ -60,6 +60,7 @@ header nav ul li a:hover {
     padding: 10px 20px;
     background-color: #59d3fc; /* Button background color */
     color: white; /* Button text color */
+    font-weight: bold
     text-decoration: none;
     border-radius: 25px;
     text-align: center;
@@ -101,7 +102,6 @@ section.active {
     justify-content: flex-start; /* align the items to the left without adding extra space */
     gap: 20px; /* Set a small gap between items */
     width: 100%;
-    max-width: 500px;
     margin: 0 auto; /* Center the container on the page */
     padding: 20px; /* Optional padding */
 }
