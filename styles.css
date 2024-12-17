@@ -104,7 +104,7 @@ section.active {
 }
 
 .project article {
-    width: 400px /* Make each article 50% wide minus the gap */
+    width: 450px /*  each article sixe in pixel */
     max-width: 100%; /* Ensure consistency in width */
     background-color: #ffffff; /* White background for the articles */
     border-radius: 10px; /* Rounded corners */
