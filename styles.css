@@ -104,7 +104,7 @@ section.active {
 }
 
 .project article {
-    width: 450px /*  each article sixe in pixel */
+    width: 400px /*  each article sixe in pixel */
     max-width: 100%; /* Ensure consistency in width */
     background-color: #ffffff; /* White background for the articles */
     border-radius: 10px; /* Rounded corners */
@@ -131,7 +131,7 @@ section.active {
 
 @media (min-width: 1024px) {
     .project article {
-        width: 30%; /* Three items per row on larger screens */
+        width: 32%; /* Three items per row on larger screens */
     }
 }
 /* Article Styles */
