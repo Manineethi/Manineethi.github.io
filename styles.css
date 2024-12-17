@@ -131,7 +131,7 @@ section.active {
 
 @media (min-width: 1024px) {
     .project article {
-        width: 32%; /* Three items per row on larger screens */
+        width: 35%; /* Three items per row on larger screens */
     }
 }
 /* Article Styles */
