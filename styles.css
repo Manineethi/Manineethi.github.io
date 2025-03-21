@@ -19,7 +19,6 @@ header {
     font-weight: bold; /* Make the text bold */
 }
 
-
 /* Headings */
 h1, h2, h3 {
     font-family: 'Calibri', sans-serif; /* Calibri font for headings */
@@ -92,6 +91,8 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .skill-box {
@@ -104,7 +105,8 @@ header nav ul li a:hover {
     gap: 10px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease;
-    min-width: 120px;
+    flex: 1 1 150px;
+    max-width: 200px;
     justify-content: center;
 }
 
@@ -121,13 +123,85 @@ header nav ul li a:hover {
     font-weight: 500;
 }
 
+/* Certifications Section Styles */
+.certifications-section {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.certifications-section h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #033047;
+}
+
+.certifications-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.certification-box {
+    background-color: #1a2a44;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    flex: 1 1 200px;
+    max-width: 300px;
+    justify-content: center;
+}
+
+.certification-box:hover {
+    transform: translateY(-5px);
+}
+
+.certification-box i {
+    font-size: 1.2em;
+}
+
+.certification-box span {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+/* Responsive Adjustments for Skills and Certifications */
+@media (max-width: 768px) {
+    .skill-box {
+        flex: 1 1 120px;
+        max-width: 150px;
+    }
+    .certification-box {
+        flex: 1 1 150px;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    .certification-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
 /* Button Styles */
 .button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #59d3fc; /* Button background color */
     color: white; /* Button text color */
-    font-weight: bold
+    font-weight: bold;
     text-decoration: none;
     border-radius: 25px;
     text-align: center;
@@ -162,6 +236,7 @@ section {
 section.active {
     display: block; /* Show active section */
 }
+
 /* Article Styles */
 .project {
     display: flex;
@@ -174,7 +249,7 @@ section.active {
 }
 
 .project article {
-    width: 400px /*  each article sixe in pixel */
+    width: 400px; /* each article size in pixel */
     max-width: 100%; /* Ensure consistency in width */
     background-color: #ffffff; /* White background for the articles */
     border-radius: 10px; /* Rounded corners */
@@ -204,25 +279,17 @@ section.active {
         width: 38%; /* Three items per row on larger screens */
     }
 }
-/* Article Styles */
 
+/* Article Image Styles */
 .project img {
     width: 100%; /* Ensures the image fills the container's width */
-    max-width: 370px;  /* Set a max-width for the image */
+    max-width: 370px; /* Set a max-width for the image */
     height: auto; /* Maintain aspect ratio */
     object-fit: contain; /* Ensure the full image is visible without cropping */
     display: block; /* Remove any space below the image */
     margin: 0 auto; /* Center the image horizontally */
     border-radius: 8px;
 }
-
-/* Hover effects for the article */
-.project article:hover {
-    transform: translateY(-5px); /* Lift effect */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
-}
-
-
 
 /* Article Header Styles */
 .project article header h3 {
@@ -242,10 +309,11 @@ section.active {
     text-decoration: underline;
     color: #5E8DFF; /* Hover effect */
 }
+
 /* Styling for images/icons */
-    .contact-icon {
-        width: 25px; /* Set image size to 25px */
-        height: 25px; /* Set image size to 25px */
-        margin-right: 10px; /* Add space between image and text */
-        vertical-align: middle; /* Align image with text */
-    }
+.contact-icon {
+    width: 25px; /* Set image size to 25px */
+    height: 25px; /* Set image size to 25px */
+    margin-right: 10px; /* Add space between image and text */
+    vertical-align: middle; /* Align image with text */
+}
