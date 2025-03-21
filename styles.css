@@ -11,7 +11,7 @@ body {
 header {
     position: sticky;
     top: 0;
-    background: linear-gradient(to right, #26A69A, #4FC3F7);
+    background: linear-gradient(to right, #00d5ff, #4FC3F7);
     color: #FFFFFF;
     padding: 10px 0;
     text-align: center;
@@ -355,7 +355,7 @@ section.active {
 
 /* Footer Styles */
 footer {
-    background: linear-gradient(to right, #26A69A, #4FC3F7);
+    background: linear-gradient(to right, #00d5ff, #4FC3F7);
     color: #FFFFFF;
     text-align: center;
     padding: 20px 0;
