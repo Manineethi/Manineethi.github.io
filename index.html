@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MANI'S Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,14 +22,95 @@
     <!-- About Me Section -->
     <section id="about" class="active">        
         <h2>Hey There!</h2>
-        <h2 style="text-align: center; margin-top: 20px;">Welcome to My(Mani) Portfolio</h2>
-        <ul>
-            <p>Myself Manimozhi Neethinayagam! Call me Mani. </p>
-            <p>I am motivated by the belief that data can be used to make better decisions.I am an accomplished Data Analyst with Comptia DATA+ certification and a strong background in automating data pipelines, performing rigorous data validation, and delivering actionable insights through advanced reporting tools like Power BI and Tableau. </p>
-            <p>Experienced in leveraging Python, SQL, and Hadoop for data analysis, ETL processes, and machine learning applications. Proven ability to optimize workflows, reduce manual efforts, and enhance data accuracy, resulting in improved decision-making efficiency.</p>
-            <p>Graduated from California State University, Los Angeles expertise in MS -Information Systems.</p>
-        </ul>
+        <h2 style="text-align: center; margin-top: 20px;">Welcome to My (Mani) Portfolio</h2>
+        <div class="about-content">
+            <p>Hi, I’m Manimozhi Neethinayagam—call me Mani! I’m a passionate Data Analyst with a CompTIA Data+ certification and a Master’s in Information Systems from California State University, Los Angeles.</p>
+            <p>I believe data is the key to smarter decisions. With expertise in automating data pipelines, performing rigorous validation, and delivering actionable insights, I’ve helped organizations optimize workflows and enhance decision-making efficiency. My toolkit includes Python, SQL, Hadoop, and advanced reporting tools like Power BI and Tableau, which I use to transform raw data into meaningful stories.</p>
+            <p>Explore my projects to see how I leverage data analysis, ETL processes, and machine learning to drive impact!</p>
+        </div>
+
+        <!-- Skills Section with Individual Boxes -->
+        <div class="skills-section">
+            <h3>My Skills</h3>
+            <div class="skills-grid">
+                <!-- Languages and Databases -->
+                <div class="skill-box">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill-box">
+                    <i class="fas fa-database"></i>
+                    <span>SQL</span>
+                </div>
+                <div class="skill-box">
+                    <i class="fas fa-database"></i>
+                    <span>Hadoop</span>
+                </div>
+                <div class="skill-box">
+                    <i class="fas fa-server"></i>
+                    <span>Hive</span>
+                </div>
+                <div class="skill-box">
+                    <i class="fas fa-database"></i>
+                    <span>MySQL</span>
+                </div>
+                <div class="skill-box">
+                    <i class="fas fa-database"></i>
+                    <span>PostgreSQL</span>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-box">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Power BI</span>
+                </div>
+                <div class="skill-box">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Tableau</span>
+                </div>
+                <div class="skill-box">
+                    <i class="fas fa-star"></i>
+                    <span>Apache Spark</span>
+                </div>
+                <div class="skill-box">
+                    <i class="fas fa-cubes"></i>
+                    <span>Databricks</span>
+                </div>
+                <div class="skill-box">
+                    <i class="fas fa-diagram-project"></i>
+                    <span>Lucidchart</span>
+                </div>
+                <div class="skill-box">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </div>
+                <div class="skill-box">
+                    <i class="fab fa-slack"></i>
+                    <span>Slack</span>
+                </div>
+                <div class="skill-box">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Monday.com</span>
+                </div>
+                <div class="skill-box">
+                    <i class="fas fa-tasks"></i>
+                    <span>Jira Software</span>
+                </div>
+                <div class="skill-box">
+                    <i class="fas fa-desktop"></i>
+                    <span>Looker Studio</span>
+                </div>
+                <div class="skill-box">
+                    <i class="fab fa-microsoft"></i>
+                    <span>Microsoft Office</span>
+                </div>
+                <div class="skill-box">
+                    <i class="fas fa-sitemap"></i>
+                    <span>SAP</span>
+                </div>
                 
+            </div>
+        </div>
     </section>
 
     <!-- Projects Section -->
@@ -47,7 +129,7 @@
                     <a href="https://public.tableau.com/app/profile/manimozhi.neethinayagam/viz/USA_Cost_of_Living/FinalDashboard?publish=yes" class="button">View Project</a>
                 </ul>
             </article>  
-             <article>
+            <article>
                 <header>
                     <h3><a href="https://github.com/Manineethi/Indeed_Insync_Web_scrapping">Indeed Insync Web scrapping</a></h3>
                 </header>
@@ -59,7 +141,7 @@
                     <a href="https://public.tableau.com/app/profile/manimozhi.neethinayagam/viz/Indeed_Job_Analysis_17380936434060/FinalDashboard?publish=yes" class="button">View Project</a>
                 </ul>
             </article> 
-             <article>
+            <article>
                 <header>
                     <h3><a href="https://github.com/Manineethi/Sales-Analysis-using-PowerBI">Super Market Sales Analysis with PowerBI</a></h3>
                 </header>
@@ -107,7 +189,7 @@
                     <a href="https://github.com/Manineethi/CFPB-Using-Machine-Learning" class="button">View Project</a>
                 </ul>
             </article> 
-             <article>
+            <article>
                 <header>
                     <h3><a href="https://github.com/Manineethi/Python_Honda_car_sales_Analysis">Honda Car Sales Using Python</a></h3>
                 </header>
@@ -119,75 +201,72 @@
                     <a href="https://github.com/Manineethi/Python_Honda_car_sales_Analysis" class="button">View Project</a>
                 </ul>
             </article> 
-                      
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Get In Touch with Me</h2>
-    <p>You can reach me at: </p>
-         
-    <ul>
-        <li>
-            <a href="mailto:manimozhiangu@gmail.com" target="_blank">
-                <img src="images/email-logo-png.png" alt="Email" class="contact-icon">manimozhiangu@gmail.com
-            </a>
-        </li>
-        <li>
-            <a href="https://www.linkedin.com/in/mani-neethi/" target="_blank">
-                <img src="images/LinkedIn_logo_initials.png" alt="LinkedIn" class="contact-icon">LinkedIn
-            </a>
-        </li>
-        <li>
-            <a href="https://github.com/Manineethi" target="_blank">
-                <img src="images/GitHub.png" alt="GitHub" class="contact-icon">GitHub
-            </a>
-        </li>
-    </ul>
-</section>
+        <p>You can reach me at: </p>
+        <ul>
+            <li>
+                <a href="mailto:manimozhiangu@gmail.com" target="_blank">
+                    <img src="images/email-logo-png.png" alt="Email" class="contact-icon">manimozhiangu@gmail.com
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/mani-neethi/" target="_blank">
+                    <img src="images/LinkedIn_logo_initials.png" alt="LinkedIn" class="contact-icon">LinkedIn
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/Manineethi" target="_blank">
+                    <img src="images/GitHub.png" alt="GitHub" class="contact-icon">GitHub
+                </a>
+            </li>
+        </ul>
+    </section>
 
-<style>
-    /* General styles for contact section */
-    #contact ul {
-        list-style: none;
-        padding: 0;
-        text-align: center;
-    }
+    <style>
+        /* General styles for contact section */
+        #contact ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
 
-    #contact ul li {
-        margin: 10px 0;
-    }
+        #contact ul li {
+            margin: 10px 0;
+        }
 
-    #contact ul li a {
-        font-size: 1.2em;
-        color: #033047;
-        text-decoration: none;
-        font-weight: bold;
-        transition: color 0.3s;
-    }
+        #contact ul li a {
+            font-size: 1.2em;
+            color: #033047;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
 
-    #contact ul li a:hover {
-        color: #59d3fc;
-    }
-    
-   </style>
+        #contact ul li a:hover {
+            color: #59d3fc;
+        }
+    </style>
 
     <script>
-    // Function to toggle between sections (About Me, Projects, and Contact)
-    function showSection(section) {
-        // Hide all sections
-        document.querySelectorAll('section').forEach(function(s) {
-            s.classList.remove('active');
-        });
+        // Function to toggle between sections (About Me, Projects, and Contact)
+        function showSection(section) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(function(s) {
+                s.classList.remove('active');
+            });
 
-        // Show the selected section
-        document.getElementById(section).classList.add('active');
-    }
+            // Show the selected section
+            document.getElementById(section).classList.add('active');
+        }
     </script>
 
     <footer>
-        <p>&copy; 2025 Mani's Portfolio. All Rights Reserved</p>
+        <p>© 2025 Mani's Portfolio. All Rights Reserved</p>
     </footer>
 </body>
 </html>
