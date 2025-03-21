@@ -120,7 +120,7 @@ section.active {
 }
 
 .skill-box {
-    background: linear-gradient(135deg, #26A69A, #4FC3F7);
+    background: #4FC3F7;
     color: #FFFFFF;
     padding: 12px 20px;
     border-radius: 12px;
@@ -173,7 +173,7 @@ section.active {
 }
 
 .certification-box {
-    background: linear-gradient(135deg, #26A69A, #4FC3F7);
+    background: #4FC3F7;
     color: #FFFFFF;
     padding: 12px 20px;
     border-radius: 12px;
