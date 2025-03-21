@@ -51,6 +51,76 @@ header nav ul li a:hover {
     transform: scale(1.1);
 }
 
+/* About Me Section Styles */
+#about {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    color: #033047; /* Matches your contact section link color */
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Skills Section Styles */
+.skills-section {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.skills-section h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #033047; /* Matches your contact section link color */
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill-box {
+    background-color: #1a2a44; /* Dark blue like in the "Interests" image */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    min-width: 120px;
+    justify-content: center;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+}
+
+.skill-box i {
+    font-size: 1.2em;
+}
+
+.skill-box span {
+    font-size: 1em;
+    font-weight: 500;
+}
+
 /* Button Styles */
 .button {
     display: inline-block;
