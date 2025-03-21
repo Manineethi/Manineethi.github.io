@@ -10,13 +10,44 @@ body {
 /* Header Styles */
 header {
     position: sticky;
-    background: #26A69A; /* Vibrant teal */
+    background: linear-gradient(to right, #26A69A, #4FC3F7); /* Teal to Sky gradient */
     color: #FFFFFF; /* White text for contrast */
-    padding: 15px 0;
+    padding: 10px 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: 'Calibri', sans-serif;
     font-weight: bold;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* Navigation Styles */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #FFFFFF; /* Keep white for contrast against gradient */
+    text-decoration: underline;
+    transform: scale(1.1);
 }
 
 /* Headings */
@@ -26,30 +57,6 @@ h1, h2, h3 {
     color: #26A69A; /* Teal for headings */
 }
 
-/* Navigation Styles */
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #FFFFFF; /* White text for nav links */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s, transform 0.3s;
-}
-
-header nav ul li a:hover {
-    color: #FF6F61; /* Coral for hover */
-    text-decoration: underline;
-    transform: scale(1.1);
-}
-
 /* About Me Section Styles */
 #about {
     padding: 40px 20px;
@@ -57,7 +64,7 @@ header nav ul li a:hover {
 }
 
 #about h2 {
-    color: #26A69A; /* Teal */
+    color: #26A69A;
     font-size: 2em;
     margin-bottom: 15px;
 }
@@ -83,7 +90,7 @@ header nav ul li a:hover {
 .skills-section h3 {
     font-size: 1.8em;
     margin-bottom: 20px;
-    color: #26A69A; /* Teal */
+    color: #26A69A;
 }
 
 .skills-grid {
@@ -96,243 +103,7 @@ header nav ul li a:hover {
 }
 
 .skill-box {
-    background-color: #26A69A; /* Teal */
-    color: #FFFFFF; /* White text */
+    background-color: #26A69A;
+    color: #FFFFFF;
     padding: 10px 15px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease;
-    flex: 1 1 150px;
-    max-width: 200px;
-    justify-content: center;
-}
-
-.skill-box:hover {
-    transform: translateY(-5px);
-}
-
-.skill-box i {
-    font-size: 1.2em;
-}
-
-.skill-box span {
-    font-size: 1em;
-    font-weight: 500;
-}
-
-/* Certifications Section Styles */
-.certifications-section {
-    padding: 20px 0;
-    text-align: center;
-}
-
-.certifications-section h3 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    color: #26A69A; /* Teal */
-}
-
-.certifications-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.certification-box {
-    background-color: #26A69A; /* Teal */
-    color: #FFFFFF; /* White text */
-    padding: 10px 15px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease;
-    flex: 1 1 200px;
-    max-width: 300px;
-    justify-content: center;
-}
-
-.certification-box:hover {
-    transform: translateY(-5px);
-}
-
-.certification-box span {
-    font-size: 1em;
-    font-weight: 500;
-}
-
-/* Responsive Adjustments for Skills and Certifications */
-@media (max-width: 768px) {
-    .skill-box {
-        flex: 1 1 120px;
-        max-width: 150px;
-    }
-    .certification-box {
-        flex: 1 1 150px;
-        max-width: 200px;
-    }
-}
-
-@media (max-width: 480px) {
-    .skill-box {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-    .certification-box {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-}
-
-/* Button Styles */
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #FF6F61; /* Coral */
-    color: #FFFFFF; /* White text */
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 25px;
-    text-align: center;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.button:hover {
-    background-color: #26A69A; /* Teal on hover */
-    transform: scale(1.05);
-}
-
-/* Footer Styles */
-footer {
-    background: #26A69A; /* Teal */
-    color: #FFFFFF; /* White text */
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Section Styles */
-section {
-    padding: 20px;
-    margin: 10px auto;
-    max-width: 900px;
-    display: none;
-}
-
-section.active {
-    display: block;
-}
-
-/* Article Styles */
-.project {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 15px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 15px;
-}
-
-.project article {
-    width: 400px;
-    max-width: 100%;
-    background-color: #FFFFFF; /* White background */
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s, box-shadow 0.3s;
-    border: 1px solid #718096; /* Medium gray border */
-    overflow: hidden;
-}
-
-/* Hover Effect */
-.project article:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
-}
-
-/* Responsive Adjustment for Smaller Screens */
-@media (max-width: 768px) {
-    .project article {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-}
-
-@media (min-width: 1024px) {
-    .project article {
-        width: 38%;
-    }
-}
-
-/* Article Image Styles */
-.project img {
-    width: 100%;
-    max-width: 370px;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
-}
-
-/* Article Header Styles */
-.project article header h3 {
-    color: #26A69A; /* Teal */
-    font-weight: bold;
-    margin: 0 0 10px;
-    font-size: 1.2em;
-}
-
-.project article header h3 a {
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.project article header h3 a:hover {
-    text-decoration: underline;
-    color: #FF6F61; /* Coral on hover */
-}
-
-/* Styling for images/icons */
-.contact-icon {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-/* Contact Section Links */
-#contact ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-#contact ul li {
-    margin: 10px 0;
-}
-
-#contact ul li a {
-    font-size: 1.2em;
-    color: #26A69A; /* Teal */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-#contact ul li a:hover {
-    color: #FF6F61; /* Coral on hover */
-}
+    border
