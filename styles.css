@@ -1,29 +1,29 @@
 /* Global Styles */
 body {
-    font-family: 'Calibri', sans-serif; /* Using Calibri font */
+    font-family: 'Calibri', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f3ee; /* Light background */
+    background-color: #F5F7FA; /* Light gray-blue background */
 }
 
 /* Header Styles */
 header {
-    position: sticky; /* Change to sticky  */
-    background: linear-gradient(to right, #59d3fc, #554dde); /* Updated gradient colors */
-    color: #f7f7f7; /* Light font color */
+    position: sticky;
+    background: #26A69A; /* Vibrant teal */
+    color: #FFFFFF; /* White text for contrast */
     padding: 15px 0;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Header shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: 'Calibri', sans-serif;
-    font-weight: bold; /* Make the text bold */
+    font-weight: bold;
 }
 
 /* Headings */
 h1, h2, h3 {
-    font-family: 'Calibri', sans-serif; /* Calibri font for headings */
+    font-family: 'Calibri', sans-serif;
     font-weight: bold;
-    color: #033047; /* blue grey text for headings */
+    color: #26A69A; /* Teal for headings */
 }
 
 /* Navigation Styles */
@@ -38,14 +38,14 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #f7f7f7; /* Light grey text for nav links */
+    color: #FFFFFF; /* White text for nav links */
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s, transform 0.3s; /* Hover effects */
+    transition: color 0.3s, transform 0.3s;
 }
 
 header nav ul li a:hover {
-    color: #5c677d; /* Hover color */
+    color: #FF6F61; /* Coral for hover */
     text-decoration: underline;
     transform: scale(1.1);
 }
@@ -57,7 +57,7 @@ header nav ul li a:hover {
 }
 
 #about h2 {
-    color: #033047; /* Matches your contact section link color */
+    color: #26A69A; /* Teal */
     font-size: 2em;
     margin-bottom: 15px;
 }
@@ -70,7 +70,7 @@ header nav ul li a:hover {
 .about-content p {
     font-size: 1.1em;
     line-height: 1.6;
-    color: #333;
+    color: #2D3748; /* Dark gray-blue for text */
     margin: 10px 0;
 }
 
@@ -83,7 +83,7 @@ header nav ul li a:hover {
 .skills-section h3 {
     font-size: 1.8em;
     margin-bottom: 20px;
-    color: #033047; /* Matches your contact section link color */
+    color: #26A69A; /* Teal */
 }
 
 .skills-grid {
@@ -96,8 +96,8 @@ header nav ul li a:hover {
 }
 
 .skill-box {
-    background-color: #1a2a44; /* Dark blue like in the "Interests" image */
-    color: white;
+    background-color: #26A69A; /* Teal */
+    color: #FFFFFF; /* White text */
     padding: 10px 15px;
     border-radius: 8px;
     display: flex;
@@ -111,7 +111,7 @@ header nav ul li a:hover {
 }
 
 .skill-box:hover {
-    transform: translateY(-5px); /* Subtle lift on hover */
+    transform: translateY(-5px);
 }
 
 .skill-box i {
@@ -132,7 +132,7 @@ header nav ul li a:hover {
 .certifications-section h3 {
     font-size: 1.8em;
     margin-bottom: 20px;
-    color: #033047;
+    color: #26A69A; /* Teal */
 }
 
 .certifications-grid {
@@ -145,8 +145,8 @@ header nav ul li a:hover {
 }
 
 .certification-box {
-    background-color: #1a2a44;
-    color: white;
+    background-color: #26A69A; /* Teal */
+    color: #FFFFFF; /* White text */
     padding: 10px 15px;
     border-radius: 8px;
     display: flex;
@@ -161,10 +161,6 @@ header nav ul li a:hover {
 
 .certification-box:hover {
     transform: translateY(-5px);
-}
-
-.certification-box i {
-    font-size: 1.2em;
 }
 
 .certification-box span {
@@ -199,30 +195,30 @@ header nav ul li a:hover {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #59d3fc; /* Button background color */
-    color: white; /* Button text color */
+    background-color: #FF6F61; /* Coral */
+    color: #FFFFFF; /* White text */
     font-weight: bold;
     text-decoration: none;
     border-radius: 25px;
     text-align: center;
-    transition: background-color 0.3s, transform 0.3s; /* Smooth hover effect */
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .button:hover {
-    background-color: #554dde; /* Hover effect */
+    background-color: #26A69A; /* Teal on hover */
     transform: scale(1.05);
 }
 
 /* Footer Styles */
 footer {
-    background: linear-gradient(to right, #59d3fc, #554dde);
-    color: #f7f7f7; /* Footer text color */
+    background: #26A69A; /* Teal */
+    color: #FFFFFF; /* White text */
     text-align: center;
     padding: 20px 0;
     position: relative;
     width: 100%;
     bottom: 0;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Footer shadow */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Section Styles */
@@ -230,34 +226,34 @@ section {
     padding: 20px;
     margin: 10px auto;
     max-width: 900px;
-    display: none; /* Hide all sections by default */
+    display: none;
 }
 
 section.active {
-    display: block; /* Show active section */
+    display: block;
 }
 
 /* Article Styles */
 .project {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap onto the next line */
-    justify-content: flex-start; /* align the items to the left without adding extra space */
-    gap: 15px; /* Set a small gap between items */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
     width: 100%;
-    margin: 0 auto; /* Center the container on the page */
-    padding: 15px; /* Optional padding */
+    margin: 0 auto;
+    padding: 15px;
 }
 
 .project article {
-    width: 400px; /* each article size in pixel */
-    max-width: 100%; /* Ensure consistency in width */
-    background-color: #ffffff; /* White background for the articles */
-    border-radius: 10px; /* Rounded corners */
+    width: 400px;
+    max-width: 100%;
+    background-color: #FFFFFF; /* White background */
+    border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* "Pop-out" effect with shadow */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
-    border: 1px solid #d9d9d9; /* Light border */
-    overflow: hidden; /* Keeps content within the article */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #718096; /* Medium gray border */
+    overflow: hidden;
 }
 
 /* Hover Effect */
@@ -269,31 +265,31 @@ section.active {
 /* Responsive Adjustment for Smaller Screens */
 @media (max-width: 768px) {
     .project article {
-        flex: 1 1 100%; /* Each article takes full width */
+        flex: 1 1 100%;
         max-width: 100%;
     }
 }
 
 @media (min-width: 1024px) {
     .project article {
-        width: 38%; /* Three items per row on larger screens */
+        width: 38%;
     }
 }
 
 /* Article Image Styles */
 .project img {
-    width: 100%; /* Ensures the image fills the container's width */
-    max-width: 370px; /* Set a max-width for the image */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Ensure the full image is visible without cropping */
-    display: block; /* Remove any space below the image */
-    margin: 0 auto; /* Center the image horizontally */
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
     border-radius: 8px;
 }
 
 /* Article Header Styles */
 .project article header h3 {
-    color: #f7f7f7; /* Light text color for article headings */
+    color: #26A69A; /* Teal */
     font-weight: bold;
     margin: 0 0 10px;
     font-size: 1.2em;
@@ -307,13 +303,36 @@ section.active {
 
 .project article header h3 a:hover {
     text-decoration: underline;
-    color: #5E8DFF; /* Hover effect */
+    color: #FF6F61; /* Coral on hover */
 }
 
 /* Styling for images/icons */
 .contact-icon {
-    width: 25px; /* Set image size to 25px */
-    height: 25px; /* Set image size to 25px */
-    margin-right: 10px; /* Add space between image and text */
-    vertical-align: middle; /* Align image with text */
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Contact Section Links */
+#contact ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#contact ul li {
+    margin: 10px 0;
+}
+
+#contact ul li a {
+    font-size: 1.2em;
+    color: #26A69A; /* Teal */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#contact ul li a:hover {
+    color: #FF6F61; /* Coral on hover */
 }
