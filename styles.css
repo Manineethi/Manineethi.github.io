@@ -141,7 +141,7 @@ section.active {
 .skill-box:hover {
     transform: translateY(-3px) scale(1.02);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 0 3px 6px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(135deg, #4FC3F7, #26A69A);
+    background: linear-gradient(135deg, #0af1f5, #4FC3F7);
 }
 
 .skill-box i {
@@ -194,7 +194,7 @@ section.active {
 .certification-box:hover {
     transform: translateY(-3px) scale(1.02);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 0 3px 6px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(135deg, #4FC3F7, #26A69A);
+    background: linear-gradient(135deg, #0af1f5, #4FC3F7);
 }
 
 .certification-box span {
