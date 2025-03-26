@@ -11,7 +11,7 @@ body {
 header {
     position: sticky;
     top: 0;
-    background: linear-gradient(to right,  #c6c7ff, #d1bbf9); /* Brighter pastel purple gradient */
+    background: linear-gradient(to right,  #c6c7ff, #e1a9f6); /* Brighter pastel purple gradient */
     color: #4B3F72; /* Deep purple for contrast */
     padding: 10px 0;
     text-align: center;
@@ -24,7 +24,7 @@ header {
 header h1 {
     font-size: 1.5em;
     margin: 0;
-    color: #4B3F72;
+    color: #8B5CF6;
     font-weight: 700;
 }
 
@@ -357,7 +357,7 @@ section.active {
 
 /* Footer Styles */
 footer {
-    background: linear-gradient(to right, #c6c7ff, #d1bbf9);
+    background: linear-gradient(to right, #c6c7ff, #e1a9f6);
     color: #4B3F72;
     text-align: center;
     padding: 20px 0;
