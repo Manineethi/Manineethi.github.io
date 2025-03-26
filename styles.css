@@ -11,7 +11,7 @@ body {
 header {
     position: sticky;
     top: 0;
-    background: linear-gradient(to right,  #F3E1FF, #cb97fc); /* Brighter pastel purple gradient */
+    background: linear-gradient(to right,  #c6c7ff, #d1bbf9); /* Brighter pastel purple gradient */
     color: #4B3F72; /* Deep purple for contrast */
     padding: 10px 0;
     text-align: center;
@@ -41,7 +41,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #8B5CF6; /* Vibrant purple for nav links */
+    color: #4B3F72; /* Vibrant purple for nav links */
     text-decoration: none;
     font-weight: 700;
     font-size: 1em;
@@ -58,7 +58,7 @@ header nav ul li a:hover {
 h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    color: #4B3F72 /*  headings */
+    color: #8B5CF6; /*  headings */
 }
 
 /* Section Styles */
@@ -357,7 +357,7 @@ section.active {
 
 /* Footer Styles */
 footer {
-    background: linear-gradient(to right, #F3E1FF, #cb97fc);
+    background: linear-gradient(to right, #c6c7ff, #d1bbf9);
     color: #4B3F72;
     text-align: center;
     padding: 20px 0;
