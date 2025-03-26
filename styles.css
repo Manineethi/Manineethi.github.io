@@ -24,7 +24,7 @@ header {
 header h1 {
     font-size: 1.5em;
     margin: 0;
-    color: #8B5CF6;
+    color: #4B3F72;
     font-weight: 700;
 }
 
@@ -83,7 +83,7 @@ section.active {
 }
 
 #about h2 {
-    color: #4B3F72; /* Vibrant purple */
+    color: #8B5CF6; /* Vibrant purple */
     font-size: 2em;
     margin-bottom: 15px;
 }
