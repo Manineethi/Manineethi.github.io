@@ -11,7 +11,7 @@ body {
 header {
     position: sticky;
     top: 0;
-    background: linear-gradient(to right,  #F3E1FF, #e1a9f6); /* Brighter pastel purple gradient */
+    background: linear-gradient(to right,  #F3E1FF, #c6c7ff); /* Brighter pastel purple gradient */
     color: #4B3F72; /* Deep purple for contrast */
     padding: 10px 0;
     text-align: center;
@@ -310,7 +310,7 @@ section.active {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background: linear-gradient(135deg, #cb97fc, #F3E1FF);
+    background: linear-gradient(135deg, #F3E1FF, #c6c7ff);
     color: #4B3F72;
     font-weight: 500;
     text-decoration: none;
@@ -357,7 +357,7 @@ section.active {
 
 /* Footer Styles */
 footer {
-    background: linear-gradient(to right, #F3E1FF, #e1a9f6);
+    background: linear-gradient(to right, #F3E1FF, #c6c7ff);
     color: #4B3F72;
     text-align: center;
     padding: 20px 0;
