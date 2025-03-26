@@ -11,8 +11,8 @@ body {
 header {
     position: sticky;
     top: 0;
-    background: linear-gradient(to right,  #F3E1FF, #ad59c2); /* Brighter pastel purple gradient */
-    background-position: center;
+    /*background: linear-gradient(to right,  #F3E1FF, #ad59c2); /* Brighter pastel purple gradient */*/
+    background: linear-gradient(90deg, #F3E1FF 50%, #ad59c2 50%);
     color: #4B3F72; /* Deep purple for contrast */
     padding: 10px 0;
     text-align: center;
