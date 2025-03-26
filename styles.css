@@ -83,7 +83,7 @@ section.active {
 }
 
 #about h2 {
-    color: #8B5CF6; /* Vibrant purple */
+    color: #4B3F72; /* Vibrant purple */
     font-size: 2em;
     margin-bottom: 15px;
 }
@@ -109,7 +109,7 @@ section.active {
 .skills-section h3 {
     font-size: 1.8em;
     margin-bottom: 20px;
-    color: #8B5CF6; /* Vibrant purple */
+    color: #4B3F72; /* Vibrant purple */
 }
 
 .skills-grid {
@@ -162,7 +162,7 @@ section.active {
 .certifications-section h3 {
     font-size: 1.8em;
     margin-bottom: 20px;
-    color: #8B5CF6;
+    color: #4B3F72;
 }
 
 .certifications-grid {
