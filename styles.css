@@ -205,6 +205,18 @@ h1, h2, h3 {
     color: var(--white);
 }
 
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle; /* aligns with text */
+    margin-right: 10px;     /* spacing between icon and text */
+}
+
+#contact ul li a {
+    font-size: 1em;
+}
+
+
 /*  Footer */
 footer {
     text-align: center;
