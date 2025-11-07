@@ -75,8 +75,7 @@ header {
 
      /* Mint green pop-up glow */
     box-shadow: 0 0 10px var(--mint), 0 0 20px var(--mint), 0 0 30px var(--mint);
-    border: 1px solid var(--mint);
-    border-radius: 12px;
+    border: 0.5px solid var(--mint);
     transition: all 0.3s ease;
 }
 
