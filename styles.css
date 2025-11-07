@@ -18,7 +18,7 @@ body {
 }
 
 /*  Header & Navigation */
-header {
+/* header {
     background: rgba(15, 15, 15, 0.85);
     backdrop-filter: blur(8px);
     color: var(--mint);
@@ -58,6 +58,62 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
+    color: var(--mint);
+    transform: scale(1.1);
+} */
+
+/* Header & Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #0D0D0D; /* Dark background */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Left part: Logo + Name */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-left h1 {
+    color: var(--mint);
+    font-size: 1.8em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/* Logo styling */
+.logo {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+/* Right part: Menu */
+.header-right ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 25px;
+}
+
+.header-right ul li a {
+    color: var(--light-gray);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header-right ul li a:hover {
     color: var(--mint);
     transform: scale(1.1);
 }
@@ -235,5 +291,19 @@ footer {
 
     .project article {
         width: 100%;
+    }
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-right ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 30px;
+        height: 30px;
     }
 }
