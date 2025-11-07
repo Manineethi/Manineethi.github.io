@@ -1,4 +1,4 @@
-/* Dark Mode Theme */
+/*  Gen Z Dark Mode Theme */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -9,7 +9,7 @@ body {
     transition: background 0.5s ease, color 0.5s ease;
 }
 
-/* Universal Accent Colors */
+/*  Universal Accent Colors */
 :root {
     --mint: #A8FFCE;
     --white: #FFFFFF;
@@ -17,52 +17,39 @@ body {
     --shadow: rgba(168, 255, 206, 0.3);
 }
 
-/* Header & Navigation */
+/*  Header & Navigation */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background: rgba(15, 15, 15, 0.95);
+    background: rgba(15, 15, 15, 0.85);
     backdrop-filter: blur(8px);
+    color: var(--mint);
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 700;
+    box-shadow: 0 0 15px var(--shadow);
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 0 15px rgba(168, 255, 206, 0.3);
 }
 
-/* Left part: Logo + Name */
-.header-left {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.header-left h1 {
-    color: var(--mint);
+header h1 {
     font-size: 1.8em;
-    font-weight: 900;
-    letter-spacing: 2px;
     margin: 0;
+    color: var(--mint);
+    letter-spacing: 1px;
 }
 
-/* Logo styling */
-.logo {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-}
-
-/* Right part: Menu */
-.header-right ul {
-    display: flex;
+header nav ul {
     list-style: none;
-    margin: 0;
+    margin: 10px 0 0;
     padding: 0;
-    gap: 25px;
 }
 
-.header-right ul li a {
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
     color: var(--light-gray);
     text-decoration: none;
     font-weight: 600;
@@ -70,32 +57,12 @@ header {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.header-right ul li a:hover {
+header nav ul li a:hover {
     color: var(--mint);
     transform: scale(1.1);
 }
 
-/* Responsive Header */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .header-right ul {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .logo {
-        width: 35px;
-        height: 35px;
-    }
-}
-
-
-
-/* Sections */
+/*  Sections */
 section {
     padding: 40px 20px;
     max-width: 1000px;
@@ -127,7 +94,7 @@ h1, h2, h3 {
     font-size: 1.1em;
 }
 
-/* ⚡ Skills & Certifications Unified Style */
+/*  Skills & Certifications Unified Style */
 .skills-grid, .certifications-grid {
     display: flex;
     flex-wrap: wrap;
