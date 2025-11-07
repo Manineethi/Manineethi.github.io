@@ -1,21 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-   <!-- <header>
-    <div class="header-container">
-        <div class="logo">
-            MANI
-        </div>
-        <nav>
-            <ul>
-                <li><a href="javascript:void(0)" onclick="showSection('about')">About Me</a></li>
-                <li><a href="javascript:void(0)" onclick="showSection('skills-section')">Skills</a></li>
-                <li><a href="javascript:void(0)" onclick="showSection('projects')">Projects</a></li>
-                <li><a href="javascript:void(0)" onclick="showSection('contact')">Contact</a></li>               
-            </ul>
-        </nav>
-    </div>
-</header> -->
-   <<head> 
+  
+   <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MANI'S Portfolio</title>
@@ -23,7 +9,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   < <header>
+     <header>
+    <div class="header-left">
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <h1>MANIMOZHI NEETHINAYAGAM</h1>
+    </div>
+    <div class="header-right">
+        <ul>
+            <li><a href="javascript:void(0)" onclick="showSection('about')">About Me</a></li>
+            <li><a href="javascript:void(0)" onclick="showSection('skills-section')">Skills</a></li>
+            <li><a href="javascript:void(0)" onclick="showSection('projects')">Projects</a></li>
+            <li><a href="javascript:void(0)" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </div>
+</header>
+   <!--<header>
         <h1>Portfolio</h1>
         <nav>
             <ul>
@@ -33,7 +33,7 @@
                 <li><a href="javascript:void(0)" onclick="showSection('contact')">Contact</a></li>               
             </ul>
         </nav>
-    </header> 
+    </header> -->
 
     <!-- About Me Section -->
     <section id="about" class="active">        
@@ -138,13 +138,14 @@
         <div class="certifications-section">
             <h3>My Certifications</h3>
             <div class="certifications-grid">
-                <div class="certification-box">
-                    <span>CompTIA Data+</span>
-                </div>
-                 <div class="certifications-grid">
-                <div class="certification-box">
-                    <span>Microsoft Azure Fundamentals - AZ 900</span>
-                </div>
+    <div class="certification-box">
+        <span>CompTIA Data+</span>
+    </div>
+    <div class="certification-box">
+        <span>Microsoft Azure Fundamentals - AZ 900</span>
+    </div>
+</div>
+
                 <!-- Add more certifications here if you have them -->
             </div>
         </div>
@@ -313,6 +314,10 @@
         }
     </style>
 
+   <footer>
+        <p>© 2025 Mani's Portfolio. All Rights Reserved</p>
+    </footer>
+
     <script>
         // Function to toggle between sections (About Me, Projects, and Contact)
         function showSection(section) {
@@ -326,8 +331,6 @@
         }
     </script>
 
-    <footer>
-        <p>© 2025 Mani's Portfolio. All Rights Reserved</p>
-    </footer>
+    
 </body>
 </html>
