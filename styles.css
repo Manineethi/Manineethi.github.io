@@ -19,37 +19,50 @@ body {
 
 /* Header & Navigation */
 header {
-    background: rgba(15, 15, 15, 0.85);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(15, 15, 15, 0.95);
     backdrop-filter: blur(8px);
-    color: var(--mint);
-    text-align: center;
-    padding: 15px 0;
-    font-weight: 700;
-    box-shadow: 0 0 15px var(--shadow);
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 0 15px rgba(168, 255, 206, 0.3);
 }
 
-header h1 {
-    font-size: 1.8em;
-    margin: 0;
+/* Left part: Logo + Name */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-left h1 {
     color: var(--mint);
-    letter-spacing: 1px;
+    font-size: 1.8em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin: 0;
 }
 
-header nav ul {
+/* Logo styling */
+.logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Right part: Menu */
+.header-right ul {
+    display: flex;
     list-style: none;
-    margin: 10px 0 0;
+    margin: 0;
     padding: 0;
+    gap: 25px;
 }
 
-header nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-header nav ul li a {
+.header-right ul li a {
     color: var(--light-gray);
     text-decoration: none;
     font-weight: 600;
@@ -57,10 +70,30 @@ header nav ul li a {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-header nav ul li a:hover {
+.header-right ul li a:hover {
     color: var(--mint);
     transform: scale(1.1);
 }
+
+/* Responsive Header */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-right ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
 
 /* Sections */
 section {
