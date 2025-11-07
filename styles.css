@@ -94,7 +94,7 @@ header:hover {
 .header-left h1 {
     color: var(--mint);
     font-size: 1.6em;
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: 1px;
     margin: 0;
 }
