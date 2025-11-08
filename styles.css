@@ -73,14 +73,19 @@ header {
     top: 0;
     z-index: 1000;
 
-     /* Mint green pop-up glow */
-    box-shadow: 0 0 10px var(--mint), 0 0 20px var(--mint), 0 0 30px var(--mint);
-    border: 0.5px solid var(--mint);
+    /* Subtle mint glow closer to header content */
+    box-shadow: 
+        0 -2px 6px var(--mint, #A8FFCE),   /* top glow */
+        0 0 8px rgba(168, 255, 206, 0.5);  /* subtle overall glow */
+    border: 0.3px solid var(--mint);       /* very thin border */
+    border-radius: 3px;
     transition: all 0.3s ease;
 }
 
 header:hover {
-    box-shadow: 0 0 15px var(--mint), 0 0 25px var(--mint), 0 0 40px var(--mint);
+    box-shadow: 
+        0 -2px 8px var(--mint),             /* top glow intensifies slightly */
+        0 0 10px rgba(168, 255, 206, 0.6);
 }
 
 
