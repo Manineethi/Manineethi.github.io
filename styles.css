@@ -81,8 +81,8 @@ header {
         0 0 8px rgba(168, 255, 206, 0.25),
         inset 0 0 6px rgba(168, 255, 206, 0.1);
     border: 0.2px solid rgba(168, 255, 206, 0.4);
-    border-radius: 15px; /* gives the oval shape */
-    margin: 8px 5px; /* adds spacing so the oval stands out */
+    border-radius: 17px; /* gives the oval shape */
+    margin: 5px 4px; /* adds spacing so the oval stands out */
     transition: all 0.3s ease;
 }
 
