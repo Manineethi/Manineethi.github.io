@@ -68,24 +68,25 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background: #0D0D0D; /* Dark background */
+    background: linear-gradient(180deg, #1A1A1A 0%, #0F0F0F 100%); /* dark gray gradient for contrast */
     position: sticky;
     top: 0;
     z-index: 1000;
 
-    /* Subtle mint glow closer to header content */
-    box-shadow: 
-        0 -2px 6px var(--mint, #A8FFCE),   /* top glow */
-        0 0 8px rgba(168, 255, 206, 0.5);  /* subtle overall glow */
-    border: 0.3px solid var(--mint);       /* very thin border */
-    border-radius: 3px;
+    /* Subtle mint glow hugging header */
+    box-shadow:
+        0 0 8px rgba(168, 255, 206, 0.25),
+        inset 0 0 6px rgba(168, 255, 206, 0.1);
+    border: 0.2px solid rgba(168, 255, 206, 0.4);
+    border-radius: 40px; /* gives the oval shape */
+    margin: 8px 15px; /* adds spacing so the oval stands out */
     transition: all 0.3s ease;
 }
 
 header:hover {
-    box-shadow: 
-        0 -2px 8px var(--mint),             /* top glow intensifies slightly */
-        0 0 10px rgba(168, 255, 206, 0.6);
+    box-shadow:
+        0 0 12px rgba(168, 255, 206, 0.4),
+        inset 0 0 8px rgba(168, 255, 206, 0.15);
 }
 
 
@@ -94,6 +95,9 @@ header:hover {
     display: flex;
     align-items: center;
     gap: 12px;
+    font-style: italic; /* italic name */
+    letter-spacing: 1px;
+    margin: 0;
 }
 
 .header-left h1 {
