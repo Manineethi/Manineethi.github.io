@@ -69,7 +69,6 @@ header {
     align-items: center;
     padding: 15px 30px;
     background: rgba(255, 255, 255, 0.06); /* semi-transparent for frosted effect */
-    backdrop-filter: blur(6px); /* light glassmorphism */
     border-bottom: 0.5px solid rgba(170, 255, 200, 0.3);
     box-shadow: 0 0 6px rgba(170, 255, 200, 0.3);
     position: sticky;
@@ -83,7 +82,7 @@ header {
         inset 0 0 6px rgba(168, 255, 206, 0.1);
     border: 0.2px solid rgba(168, 255, 206, 0.4);
     border-radius: 15px; /* gives the oval shape */
-    margin: 8px 15px; /* adds spacing so the oval stands out */
+    margin: 8px 5px; /* adds spacing so the oval stands out */
     transition: all 0.3s ease;
 }
 
