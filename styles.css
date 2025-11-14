@@ -68,28 +68,27 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background: rgba(255, 255, 255, 0.06); /* semi-transparent for frosted effect */
-    border-bottom: 0.5px solid rgba(170, 255, 200, 0.3);
-    box-shadow: 0 0 6px rgba(170, 255, 200, 0.3);
+
+    background: rgba(255, 255, 255, 0.06); /* same frosted effect */
+
+    /* Bottom-only border + glow */
+    border-bottom: 0.8px solid rgba(168, 255, 206, 0.35);
+    box-shadow: 0 3px 8px rgba(168, 255, 206, 0.25); /* glow under header */
+
     position: sticky;
     top: 0;
     z-index: 1000;
 
-    /* Subtle mint glow hugging header */
-    box-shadow:
-         0 -2px 6px var(--mint, #A8FFCE),   /* top glow */
-        0 0 8px rgba(168, 255, 206, 0.25),
-        inset 0 0 6px rgba(168, 255, 206, 0.1);
-    border: 0.2px solid rgba(168, 255, 206, 0.4);
-    border-radius: 17px; /* gives the oval shape */
-    margin: 5px 4px; /* adds spacing so the oval stands out */
+    /* Remove oval */
+    border-radius: 0;
+    margin: 0;
+
     transition: all 0.3s ease;
 }
 
 header:hover {
-    box-shadow:
-        0 0 12px rgba(168, 255, 206, 0.4),
-        inset 0 0 8px rgba(168, 255, 206, 0.15);
+    /* Slight stronger glow on hover */
+    box-shadow: 0 4px 12px rgba(168, 255, 206, 0.35);
 }
 
 
